@@ -31,7 +31,11 @@ Ya'ni Elementlarni saqlash uchun Array va LinkedListlardan  foydalanadi.
 Cloneable, Serializable interface lardan implementatsiya olgan.
 
 
-3.
+3.Generickdan foydalanish nega kerak.
+Generics - Generics  parametrlashtirilgan tiplarni bildiradi. (Generics mean parameterized types)
+Ya'ni qaysidir class yoki metodni qandaydir mavhum tipga bog'lab qo'yamiz va shu class yoki metod ni
+ishlatayotganda bizga kerakli bo'lgan tipni berib yuboramiz.
+Natijada shu tip uchun  shu class yoki metodni ishlatamiz.Bu orqali type safetyga erishishimiz mumkin.
 
 
 4.
