@@ -52,5 +52,5 @@ Natijada shu tip uchun  shu class yoki metodni ishlatamiz.Bu orqali type safetyg
 
         DoublyLinkedList                                            SortedSet
 
-        Throwable interfeysdan Collection interfeys implemantatsiya oladi.Collectiondan List,Queue,
+        Iterable interfeysdan Collection interfeys implemantatsiya oladi.Collectiondan List,Queue,
         va Set interfeyslari extend oladi.
