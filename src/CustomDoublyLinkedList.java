@@ -37,7 +37,7 @@ public class CustomDoublyLinkedList <T>{
         size++;
     }
 
-    public T get(int index){
+    public T get(int index){ // birinchi usul
         if(index<0 || index > size){
             throw new IndexOutOfBoundsException(Messages.ERROR);
         }
@@ -46,6 +46,17 @@ public class CustomDoublyLinkedList <T>{
             temp = temp.next;
         }
         return temp.value;
+    }
+    public T get2(int index){      // ikkinchi usul
+        int c = size - 1;
+        for (Node x = head; x != null; x = x.next){
+            if (c == index){
+                return x.value;
+            }
+            c--;
+        }
+
+        return null;
     }
 
 
@@ -64,16 +75,26 @@ public class CustomDoublyLinkedList <T>{
 
 
 
-    public void remove(T element){
-        if(Objects.equals(head.value, element)){
+    public void remove(int index){
+        if (index == 0){
             head = head.next;
+            size--;
             return;
         }
-        Node temp = head;
-        while(temp.next != null){
-            if(temp.value.equals(element)){
-                temp.prev = temp.next;
+
+        if (index == size - 1){
+            last.prev.next = null;
+            size--;
+            return;
+        }
+
+        int c = size - 1;
+        for (Node x = head; x != null; x = x.next){
+            if (c == index){
+                x.prev.next = x.next;
+                return;
             }
+            c--;
         }
     }
     public boolean contains(T element){

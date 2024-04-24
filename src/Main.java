@@ -14,8 +14,9 @@ public class Main {
 
     customDoublyLinkedList.get(3);
     System.out.println(customDoublyLinkedList.toString());
-
-    customDoublyLinkedList.contains(7);
+    customDoublyLinkedList.get2(0);
+        System.out.println(customDoublyLinkedList);
+        customDoublyLinkedList.contains(7);
     System.out.println(customDoublyLinkedList);
     }
 
