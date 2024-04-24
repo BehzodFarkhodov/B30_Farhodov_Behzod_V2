@@ -38,4 +38,19 @@ ishlatayotganda bizga kerakli bo'lgan tipni berib yuboramiz.
 Natijada shu tip uchun  shu class yoki metodni ishlatamiz.Bu orqali type safetyga erishishimiz mumkin.
 
 
-4.
+4.Collection Heirarcy -            Throwable
+                                       |
+                                   Collection
+
+        List                       Queue                            Set
+
+        ArrayList                  Deque                            HashSet
+
+        LinkedList                 PriorityQueue                    LinkedHashSet
+
+        Stack                      ArrayDequeue                     TreeSet
+
+        DoublyLinkedList                                            SortedSet
+
+        Throwable interfeysdan Collection interfeys implemantatsiya oladi.Collectiondan List,Queue,
+        va Set interfeyslari extend oladi.
