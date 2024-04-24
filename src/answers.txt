@@ -1,0 +1,28 @@
+1.LinkedList va ArrayList farqlari.ArrayList ma'lumotlarni saqlash
+uchun arraydan foydalanadi.Arrayda load factor mavjud emas.Uning hajmi to'lganda
+grow methodi yordamida uzunligini 1 ga oshirib yuboramiz.Arraydan qanday maqsadlarda foydalanish
+mumkin: agar ma'lumotlar ustida ko'proq (read) o'qish amalini ishlatmoqchi bo'lsak arraydan
+foydalangan ma'qul.ArrayList da elementlarni manipulyatsiya qilish sekin dedik  Sababi u arraydan foydalanadi. Agar array dan element o'chirilsa undan keyingi elemetnlar bitta oldinga surulishi kerak. Agar index bo'yicha element joylaydigan bo'lsak ,
+shu index dan keyingi elementlarni bitta keyinga surish kerak.ArrayList classi List interface dan implements olgan.
+Shu sababdan u faqat list/ro'yhat sifatida ishlatilish mumkun.ArrayList ob'ekti yaratilganda boshlang'ich hajmi 10 ga teng bo'ladi odatiy holatda.
+Ya'nikim ArrayList dagi array ning uzunligi 10 ga teng bo'ladi. ArrayList -
+ob'ekti yaratayotganda konstructor orqali boshlang'ich hajmni o'zgartirishimiz mumkun
+
+
+
+LinkedList - LinkedList interfeys.Ma'lumotlarni saqlash uchun DoublyLinkedListdan foydalanadi.
+Nodelardan ya'ni.Dynamic o'zgaruvchi.LinkedListdan koproq elementlar ustida manipulyatsiya
+qilish uchun ishlatish qulay.Ya'ni elementlarni olish,listga elementlarni qo'shish,o'chirish(remove)
+kabi amallarini bajarish qulay.LinkedList classi List va Queue ,Deque interface laridan implementatsiya qilgan.
+Shu sababdan u list/ro'yhat va navbat sifatida ishlarilishi mumkun.LinkedList da boshlang'ich hajm bo'lmaydi. LinkedList dan ob'ekt
+yaratganimizda ichkaridagi double linked list ning elementlar soni 0ga teng bo'ladi deymz.
+
+
+
+2.
+
+
+3.
+
+
+4.
