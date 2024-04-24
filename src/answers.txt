@@ -38,7 +38,7 @@ ishlatayotganda bizga kerakli bo'lgan tipni berib yuboramiz.
 Natijada shu tip uchun  shu class yoki metodni ishlatamiz.Bu orqali type safetyga erishishimiz mumkin.
 
 
-4.Collection Heirarcy -            Throwable
+4.Collection Heirarcy -            Itarable
                                        |
                                    Collection
 
