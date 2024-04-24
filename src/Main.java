@@ -1,17 +1,32 @@
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        String[] arrays = { " Words : "  + " ------> " + "dk", "ac", "kd", "ca", "zz", "df", "fd", "wer", "rew"};
+        int count = countPairs(arrays);
+        System.out.println("Pairslar soni   : -------->  " + count);
+    }
 
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
-
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
+    // arraydagi har bitta stringni  solishtirb ciqdm birinchi
+    public static boolean methodArraysString(String s1, String s2) {
+        if (s1.length() != s2.length()) {
+            return false;
         }
+        for (int i = 0; i < s1.length(); i++) {
+            if (s1.charAt(i) != s2.charAt(s2.length() - 1 - i)) {
+                return false;
+            }
+        }
+        return true;
+    }
+    public static int countPairs(String[] words) {
+        int count = 0;
+        for (int i = 0; i < words.length; i++) {
+            for (int j = i + 1; j < words.length; j++) {
+                if (methodArraysString(words[i], words[j])) {
+                    count++;
+                }
+            }
+        }
+        return count;
     }
 }
+
